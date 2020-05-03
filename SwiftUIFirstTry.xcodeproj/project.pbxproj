@@ -14,6 +14,7 @@
 		6F91503A245E5DBE00BF962C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F915039245E5DBE00BF962C /* Assets.xcassets */; };
 		6F91503D245E5DBE00BF962C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F91503C245E5DBE00BF962C /* Preview Assets.xcassets */; };
 		6F915040245E5DBE00BF962C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F91503E245E5DBE00BF962C /* LaunchScreen.storyboard */; };
+		6F915048245F0A3C00BF962C /* MenuPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F915047245F0A3C00BF962C /* MenuPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6F91503C245E5DBE00BF962C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6F91503F245E5DBE00BF962C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F915041245E5DBE00BF962C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F915047245F0A3C00BF962C /* MenuPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				6F915030245E5DBC00BF962C /* AppDelegate.swift */,
 				6F915032245E5DBC00BF962C /* SceneDelegate.swift */,
 				6F915037245E5DBC00BF962C /* ContentView.swift */,
+				6F915047245F0A3C00BF962C /* MenuPage.swift */,
 				6F915039245E5DBE00BF962C /* Assets.xcassets */,
 				6F91503E245E5DBE00BF962C /* LaunchScreen.storyboard */,
 				6F915041245E5DBE00BF962C /* Info.plist */,
@@ -151,6 +154,7 @@
 			files = (
 				6F915036245E5DBC00BF962C /* SwiftUIFirstTry.xcdatamodeld in Sources */,
 				6F915031245E5DBC00BF962C /* AppDelegate.swift in Sources */,
+				6F915048245F0A3C00BF962C /* MenuPage.swift in Sources */,
 				6F915038245E5DBC00BF962C /* ContentView.swift in Sources */,
 				6F915033245E5DBC00BF962C /* SceneDelegate.swift in Sources */,
 			);
