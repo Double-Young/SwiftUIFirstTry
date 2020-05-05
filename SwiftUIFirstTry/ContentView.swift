@@ -83,7 +83,7 @@ struct ContentView: View {
             
 //            Text("\(bottomState.height)").offset(y:-360)
             
-            BottomCardView()
+            BottomCardView(show: $showCard)
 //            .blur(radius: self.show ? 0 : 20)
                 .offset(y: showCard ? 400 : 1000)
                 .offset(y: bottomState.height)
@@ -134,7 +134,7 @@ struct CardView: View {
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
-                    Text("Cards having animations")
+                    Text("Platinum Credit Card")
                         .foregroundColor(Color("accent"))
                 }
                 Spacer()
@@ -166,7 +166,7 @@ struct HeaderView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("SwiftUI Course")
+                Text("My Wallet")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .padding(.horizontal, 20)
@@ -174,6 +174,18 @@ struct HeaderView: View {
                 
                 Spacer()
             }
+//            HStack {
+//                Text("My wallet".uppercased())
+//                    .font(.footnote)
+//                    .fontWeight(.semibold)
+//                    .font(.system(size: 20))
+//                    .foregroundColor(Color.black.opacity(0.3))
+//                    .multilineTextAlignment(.leading)
+//                    .padding(.horizontal, 23)
+//
+//
+//                Spacer()
+//                       }
             Image("Background1")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -183,6 +195,7 @@ struct HeaderView: View {
 }
 
 struct BottomCardView: View {
+    @Binding var show : Bool
     var body: some View {
         VStack (spacing: 20){
             Rectangle()
@@ -190,10 +203,36 @@ struct BottomCardView: View {
                 .cornerRadius(3)
                 .opacity(0.1)
                 .frame(maxWidth:.infinity)
-            Text("This certificate is proof that Meng To has achieved the UI Design course with approval from a Design+Code instructor.")
+            Text("Hello World Prototype Credit Card")
+                .multilineTextAlignment(.center)
+                .font(.headline)
+            Text("This is a virtual prototype credit card for DoubleYoung's SwiftUI training course.")
                 .multilineTextAlignment(.center)
                 .font(.subheadline)
                 .lineSpacing(4)
+            HStack(spacing: 30.0) {
+                
+                RingView(color1: #colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1), color2: #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1), width: 88, height: 88, percent: 76, show: $show)
+                    .animation(Animation.spring(response: 1, dampingFraction: 0.6, blendDuration: 0).delay(0.4))
+                
+                VStack(alignment: .leading, spacing: 8.0) {
+                    Text("SwiftUI Prototype")
+                        .fontWeight(.bold)
+                        .font(.system(size: 16))
+                    Text("12 of 12 sections completed\n10 hours spent so far")
+                        .font(.footnote)
+                        .lineSpacing(4)
+                }
+                    .padding(.leading, 20)
+                    .padding(.trailing, 60)
+                    .padding(.vertical, 20)
+                    .background(Color.white)
+                    .cornerRadius(20)
+                    .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 20)
+                    
+                
+            }
+            
             Spacer()
         }
         .padding()
